@@ -1,0 +1,8 @@
+{
+    "PY": {
+        "content": "import discord\nfrom discord.ext import commands\n\nintents = discord.Intents.default()\nintents.members = True\n\nbot = commands.Bot(command_prefix='!', intents=intents)\n\n@bot.event\nasync def on_ready():\n    print(f'We have logged in as {bot.user}')\n\n@bot.command()\nasync def hello(ctx):\n    await ctx.send('Hello, world!')\n\nbot.run(None)"
+    },
+    "JS": {
+      "content": "JavaScript template content..."
+    }
+  }
